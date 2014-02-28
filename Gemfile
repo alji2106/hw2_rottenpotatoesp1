@@ -8,7 +8,7 @@ gem 'rails', '3.2.14'
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
   gem 'sqlite3'
-  gem 'debugger'
+  gem 'debugger', '1.6.5'
 end
 group :production do
   gem 'pg'
@@ -24,6 +24,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :doc do
+  gem 'sdoc', '0.3.20', require: false
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
